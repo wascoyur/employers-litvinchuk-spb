@@ -5,7 +5,7 @@
 const Card = ()=>{
   const [count] = useState('')
   return(
-    <div className="flex flex-row mx-auto min-h-screen">
+    <div className="flex md:flex-row mx-auto min-h-screen items-start">
       <CardPhoto/>
       <CardDetail />
     </div>

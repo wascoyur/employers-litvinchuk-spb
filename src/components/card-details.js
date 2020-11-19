@@ -8,7 +8,7 @@ const CardDetail = ()=>{
       <div className="m-1 md:h-16 w-1/2 ">
         <div id="short-description " className="p-4" >
           <div id="header"className="flex justify-between">
-            <h3 id="title" className="text-xl font-extrabold">Ветчина и грыбы</h3>
+            <h3 id="title" className="text-xl font-extrabold">Ветчина и грибы</h3>
             <div id="price" className="text-lg font-extrabold">146р</div>
           </div>
           <div id ="reviews" className="text-gray-600 text-xs md-6">
@@ -31,7 +31,7 @@ const CardDetail = ()=>{
           <div id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore , sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore , sed do eiusmod tempor incididunt ut labore</div>
           <div id="weight" className="bg-gray-600">425gr</div>
           <div id ="counter-wrapper" className="flex justify-between text-2xl">
-            <button className="btn"
+            <button className="btn w-30"
               onClick={()=>{addCount(cur +1)}}
             >+</button>
               <div id="count">{ cur }</div>
@@ -40,7 +40,7 @@ const CardDetail = ()=>{
                 if (cur<=1)return cur;
                 addCount(cur -1)}}
             >-</button>
-            <button className="w-24 bg-red-600 flex-initial">В корзину</button>
+            <button className="min-w-min max-w-lg bg-red-600 flex-grow">В корзину</button>
           </div>
         </div>
       </div>
