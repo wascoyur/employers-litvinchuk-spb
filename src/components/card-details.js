@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import Onion from "./onion";
 
 
 const CardDetail = ()=>{
@@ -16,13 +17,11 @@ const CardDetail = ()=>{
             <div id="selector">20 отзывов</div>
           </div>
           
-          <div id="spice" className="flex flex-row justify-between text-xs">
-            
-            <div id="selector">убрать лук</div>
-            <div id="selector">убрать лук</div>
-            <div id="selector">убрать лук</div>
-            <div id="selector">убрать лук</div>
-            <div id="selector">убрать лук</div>
+          <div id="spice" className="flex flex-row justify-end text-xs">
+            <Onion/>
+            <Onion/>
+            <Onion/>
+            <Onion/>
           </div>
         </div>
         
